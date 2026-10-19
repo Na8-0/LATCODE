@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LATCODE | تطوير مواقع وتطبيقات ويب</title>
+<meta name="description" content="LATCODE: نحوّل فكرتك إلى موقع أو تطبيق ويب يشتغل، ونختبر مواقعك وتطبيقاتك. هندسة برمجيات واختبار قبل التسليم. اطلب مشروعك عبر واتساب.">
+<meta name="theme-color" content="#F3EEE4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2064%2064%22%3E%3Crect%20width=%2264%22%20height=%2264%22%20rx=%2212%22%20fill=%22%2316130F%22/%3E%3Cpath%20fill=%22%23F3EEE4%22%20d=%22M11.8%2046.6V17.400000000000002H17.8V41.0H29.6V46.6Z%22/%3E%3Cpath%20fill=%22%23FF4B1F%22%20d=%22M44.2%2047.0Q41.24%2047.0%2039.040000000000006%2045.900000000000006Q36.84%2044.800000000000004%2035.620000000000005%2042.82000000000001Q34.4%2040.84%2034.4%2038.2V25.8Q34.4%2023.12%2035.620000000000005%2021.16Q36.84%2019.2%2039.040000000000006%2018.1Q41.24%2017.0%2044.2%2017.0Q47.120000000000005%2017.0%2049.300000000000004%2018.1Q51.480000000000004%2019.2%2052.7%2021.16Q53.92%2023.12%2053.92%2025.8H47.92Q47.92%2024.040000000000003%2046.94%2023.12Q45.96%2022.2%2044.16%2022.2Q42.36%2022.2%2041.379999999999995%2023.12Q40.4%2024.040000000000003%2040.4%2025.8V38.2Q40.4%2039.92%2041.379999999999995%2040.86Q42.36%2041.800000000000004%2044.16%2041.800000000000004Q45.96%2041.800000000000004%2046.94%2040.86Q47.92%2039.92%2047.92%2038.2H53.92Q53.92%2040.84%2052.7%2042.82000000000001Q51.480000000000004%2044.800000000000004%2049.300000000000004%2045.900000000000006Q47.120000000000005%2047.0%2044.2%2047.0Z%22/%3E%3C/svg%3E">
+<meta property="og:title" content="LATCODE — LET'S CODE YOUR IDEAS">
+<meta property="og:description" content="Software Engineering, Enhanced by AI.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"LATCODE","description":"تطوير مواقع إلكترونية وتطبيقات ويب وحلول برمجية","telephone":"+966580778973"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=JetBrains+Mono:wght@400;600;800&family=Readex+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F3EEE4;--paper2:#EAE3D5;--ink:#16130F;--ink2:#2A251E;
+  --hot:#FF4B1F;--hot-text:#C2330E;--muted:#625B50;--line:rgba(22,19,15,.2);
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --disp:'Readex Pro','IBM Plex Sans Arabic',Tahoma,sans-serif;
+  --body:'IBM Plex Sans Arabic',Tahoma,system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.85;overflow-x:hidden;
+  padding-bottom:env(safe-area-inset-bottom,0)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--disp);margin:0;line-height:1.2;font-weight:700}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono);direction:ltr;unicode-bidi:isolate}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.skip{position:absolute;inset-inline-start:12px;top:-60px;background:var(--ink);color:var(--paper);padding:8px 14px;z-index:99}
+.skip:focus{top:12px}
+
+/* ---------- nav ---------- */
+header.top{position:sticky;top:0;z-index:20;background:rgba(243,238,228,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{font-family:var(--mono);font-weight:800;font-size:21px;letter-spacing:.02em;text-decoration:none;direction:ltr;display:inline-flex;align-items:center;min-height:44px}
+.tel{display:inline-block;padding:13px 0;min-height:44px}
+.logo span{background:var(--ink);color:var(--hot);padding:0 7px;margin-inline-start:2px;border-radius:3px}
+.nav ul{display:none;gap:26px;list-style:none;margin:0;padding:0;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px/1 var(--body);padding:15px 26px;background:var(--ink);color:var(--paper);
+  border:2px solid var(--ink);border-radius:4px;text-decoration:none;cursor:pointer;box-shadow:5px 5px 0 var(--hot);
+  transition:transform .15s,box-shadow .15s;min-height:48px}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--hot)}
+.btn:active{transform:translate(5px,5px);box-shadow:0 0 0 var(--hot)}
+.btn.sm{padding:10px 18px;font-size:14px;min-height:44px;box-shadow:3px 3px 0 var(--hot)}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:var(--paper);transform:none}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:44px 0 56px;
+  background-image:radial-gradient(rgba(22,19,15,.16) 1px,transparent 1.2px);background-size:22px 22px}
+.hero .lab{font:600 13px/1 var(--mono);letter-spacing:.08em;color:var(--hot-text);direction:ltr;display:inline-block;margin-bottom:22px}
+.hero h1{font-size:clamp(40px,10.5vw,104px);line-height:1.18;letter-spacing:-.01em;max-width:13ch}
+.hero h1 mark{background:none;color:var(--ink);position:relative;white-space:nowrap}
+.hero h1 mark::after{content:"";position:absolute;inset-inline:-4px;bottom:.04em;height:.2em;background:var(--hot);z-index:-1}
+.hero .sub{font-size:clamp(17px,2.2vw,21px);color:var(--ink2);max-width:46ch;margin:26px 0 32px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.spec{margin-top:48px;background:var(--ink);color:var(--paper);border-radius:6px;overflow:hidden;box-shadow:8px 8px 0 var(--hot);max-width:640px}
+.spec .bar{display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1px solid rgba(243,238,228,.18);font:400 12px/1 var(--mono);color:rgba(243,238,228,.6)}
+.spec .bd{padding:18px 18px 22px;min-height:132px}
+.spec .idea{font-size:clamp(16px,2.4vw,19px);color:var(--paper);min-height:1.9em}
+.spec .arrow{font:400 13px/1 var(--mono);color:var(--hot);direction:ltr;margin:10px 0;display:block}
+.spec code{font:600 clamp(13px,2.2vw,16px)/1.7 var(--mono);direction:ltr;display:block;text-align:left;color:#FFB59E;min-height:1.7em;word-break:break-all}
+.cur{display:inline-block;width:.55em;height:1.05em;background:var(--hot);vertical-align:-.15em;margin-inline-start:2px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.strip{border-block:2px solid var(--ink);background:var(--paper2)}
+.strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;padding-block:14px;font:600 13px/1.6 var(--mono);direction:ltr;letter-spacing:.03em}
+.strip .wrap span:last-child{color:var(--hot-text)}
+
+/* ---------- sections ---------- */
+section{padding:72px 0;scroll-margin-top:64px}
+.kick{font:600 13px/1 var(--mono);color:var(--hot-text);direction:ltr;letter-spacing:.08em;margin-bottom:14px;display:block}
+h2{font-size:clamp(30px,6vw,52px)}
+.lead{color:var(--muted);max-width:52ch;margin-top:14px;font-size:18px}
+
+/* services — indexed rows */
+.rows{margin-top:40px;border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:auto 1fr auto;gap:6px 18px;align-items:center;padding:22px 4px;border-bottom:1px solid var(--line);
+  width:100%;background:none;border-inline:0;border-top:0;text-align:start;font:inherit;color:inherit;cursor:pointer;transition:background .2s,padding .2s}
+.row:hover{background:var(--paper2);padding-inline:14px}
+.row .n{font:600 14px/1 var(--mono);color:var(--hot-text);direction:ltr}
+.row h3{font-size:clamp(20px,3.4vw,28px)}
+.row p{grid-column:2;color:var(--muted);font-size:16px;line-height:1.7}
+.row .go{grid-column:3;grid-row:1;font:600 13px/1 var(--mono);direction:ltr;opacity:.55;white-space:nowrap}
+.row:hover .go{opacity:1;color:var(--hot-text)}
+
+/* approach */
+.dark{background:var(--ink);color:var(--paper)}
+.dark .kick{color:#FF8B6B}.dark .lead{color:rgba(243,238,228,.72)}
+.pillars{display:grid;gap:0;margin-top:40px;border-top:1px solid rgba(243,238,228,.25)}
+.pil{padding:28px 0;border-bottom:1px solid rgba(243,238,228,.25)}
+.pil .t{font:800 14px/1.4 var(--mono);color:var(--hot);direction:ltr;letter-spacing:.04em}
+.pil h3{font-size:24px;margin:10px 0 8px}
+.pil p{color:rgba(243,238,228,.78);font-size:16px}
+
+/* process — commit log */
+.log{margin-top:40px;position:relative;padding-inline-start:38px}
+.log::before{content:"";position:absolute;inset-block:8px;inset-inline-start:11px;width:2px;background:var(--ink)}
+.step{position:relative;padding-bottom:30px}
+.step::before{content:"";position:absolute;inset-inline-start:-35px;top:9px;width:14px;height:14px;background:var(--paper);border:3px solid var(--ink);border-radius:50%}
+.step.hl::before{background:var(--hot);border-color:var(--ink)}
+.step .tag{font:600 13px/1 var(--mono);direction:ltr;color:var(--muted);display:inline-block}
+.step h3{font-size:22px;margin:6px 0 4px}
+.step p{color:var(--muted);font-size:16px;max-width:54ch}
+.step.hl h3 span{background:var(--hot);color:var(--ink);padding:0 8px}
+
+/* faq */
+.qa{margin-top:36px;border-top:2px solid var(--ink)}
+.qa details{border-bottom:1px solid var(--line)}
+.qa summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 4px;min-height:56px;font:600 clamp(17px,2.8vw,21px)/1.5 var(--disp)}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:"+";font:600 24px/1 var(--mono);color:var(--hot-text);flex:none}
+.qa details[open] summary::after{content:"−"}
+.qa summary:hover{background:var(--paper2)}
+.qa p{color:var(--muted);font-size:16px;max-width:60ch;padding:0 4px 20px}
+/* order ticket */
+.order{background:var(--paper2)}
+.ticket{margin-top:36px;background:var(--paper);border:2px solid var(--ink);border-radius:6px;box-shadow:8px 8px 0 var(--ink);overflow:hidden}
+.tk-h{display:flex;justify-content:space-between;gap:12px;padding:12px 20px;background:var(--ink);color:var(--paper);font:600 12px/1.4 var(--mono);letter-spacing:.06em}
+.tk-b{display:grid}
+form{padding:24px 20px 28px;display:grid;gap:18px}
+label{display:grid;gap:7px;font-weight:600;font-size:15px}
+label small{font-weight:400;color:var(--muted)}
+input,select,textarea{font:400 16px/1.6 var(--body);color:var(--ink);background:#fff9;border:2px solid var(--ink);border-radius:3px;padding:12px 14px;width:100%;min-height:48px}
+textarea{resize:vertical;min-height:120px}
+input::placeholder,textarea::placeholder{color:#8a8274}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--hot);outline-offset:1px;background:#fff}
+.two{display:grid;gap:18px}
+.pv{padding:22px 20px 26px;border-top:2px dashed var(--ink);background:repeating-linear-gradient(0deg,transparent 0 31px,rgba(22,19,15,.06) 31px 32px)}
+.pv h3{font-size:15px;font-family:var(--body);font-weight:600;margin-bottom:10px}
+.pv pre{margin:0;white-space:pre-wrap;word-break:break-word;font:400 14.5px/1.9 var(--body);color:var(--ink2);min-height:150px}
+.pv .acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.pv .note{font-size:13.5px;color:var(--muted);margin-top:14px}
+#st{font-size:14px;color:var(--hot-text);min-height:1.4em;margin-top:8px}
+
+/* founder */
+.about{padding:84px 0 92px}
+.who{font:700 clamp(30px,7vw,64px)/1.5 var(--disp);max-width:22ch;margin-top:6px}
+.who mark{background:var(--hot);color:var(--ink);padding:0 10px;white-space:nowrap;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.cr{display:block;margin-top:30px;font:600 13px/1 var(--mono);letter-spacing:.12em;color:rgba(243,238,228,.65);direction:ltr;text-align:right}
+
+footer{border-top:2px solid var(--ink);padding:34px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:15px}
+footer .wrap{display:grid;gap:18px}
+footer .tl{font:600 13px/1.7 var(--mono);direction:ltr;text-align:left;color:var(--muted)}
+
+/* floating whatsapp */
+.btn.wa{background:var(--hot);color:var(--ink);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.btn.wa:hover{box-shadow:1px 1px 0 var(--ink)}
+.wa{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;transition:opacity .25s}
+
+@media(min-width:960px){
+  .hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:end}
+  .hero .hd{grid-column:1}
+  .hero .spec{margin-top:0;grid-column:2;align-self:end}
+}
+@media(min-width:760px){
+  .wrap{padding:0 32px}
+  .nav ul{display:flex}
+  .hero{padding:80px 0 80px}
+  .spec{margin-top:64px}
+  section{padding:104px 0}
+  .pillars{grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(243,238,228,.25)}
+  .pil{padding:30px 28px 34px;border-bottom:0;border-inline-start:1px solid rgba(243,238,228,.25)}
+  .pil:first-child{border-inline-start:0;padding-inline-start:0}
+  .tk-b{grid-template-columns:1.15fr 1fr}
+  .pv{border-top:0;border-inline-start:2px dashed var(--ink)}
+  form{padding:30px 28px 34px}.pv{padding:30px 28px}
+  .two{grid-template-columns:1fr 1fr}
+  footer .wrap{grid-template-columns:1fr auto;align-items:end}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cur{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#order">انتقل إلى نموذج الطلب</a>
+
+<header class="top"><div class="wrap nav">
+  <a class="logo" href="#top" aria-label="LATCODE">LAT<span>CODE</span></a>
+  <ul>
+    <li><a href="#services">الخدمات</a></li>
+    <li><a href="#approach">نهج العمل</a></li>
+    <li><a href="#process">الخطوات</a></li>
+    <li><a href="#faq">أسئلة</a></li>
+    <li><a href="#about">عن المؤسِّسة</a></li>
+  </ul>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="hd">
+  <span class="lab">// LET'S CODE YOUR IDEAS</span>
+  <h1>فكرتك، <mark>كود</mark> يشتغل.</h1>
+  <p class="sub">نحوّل فكرتك إلى موقع أو تطبيق ويب يشتغل. نتفق معك على المطلوب والتكلفة قبل ما نبدأ، ونختبر العمل قبل ما نسلّمه لك.</p>
+  <div class="cta">
+    <a class="btn" href="#order">اطلب مشروعك <span aria-hidden="true">←</span></a>
+    <a class="btn ghost" href="#services">شوف الخدمات</a>
+  </div>
+  </div>
+
+  <div class="spec" aria-label="مثال توضيحي لتحويل فكرة إلى كود">
+    <div class="bar"><span>idea → code</span><span>مثال توضيحي</span></div>
+    <div class="bd">
+      <p class="idea" id="idea" aria-live="off"></p>
+      <span class="arrow">↓ build</span>
+      <code id="code"></code><span class="cur" aria-hidden="true"></span>
+    </div>
+  </div>
+</div></div>
+
+<div class="strip"><div class="wrap"><span>Software Engineering, Enhanced by AI.</span><span>WEBSITES · WEB APPS · QA TESTING</span></div></div>
+
+<section id="services"><div class="wrap">
+  <span class="kick">01 / SERVICES</span>
+  <h2>ايش نبني لك</h2>
+  <p class="lead">اختر الخدمة الأقرب لاحتياجك، وبنفتح لك نموذج الطلب جاهز عليها.</p>
+  <div class="rows" id="rows">
+    <button class="row" type="button" data-s="موقع تعريفي أو صفحة واحدة"><span class="n">01</span><h3>مواقع تعريفية وصفحات واحدة</h3><span class="go">→</span><p>صفحة واحدة مركّزة على هدف واحد مثل التسجيل أو الطلب أو التواصل، أو موقع تعريفي بعدة صفحات يعرّف بك أو بمشروعك.</p></button>
+    <button class="row" type="button" data-s="تطبيق ويب أو نظام"><span class="n">02</span><h3>تطبيقات ويب وأنظمة</h3><span class="go">→</span><p>أنظمة وتطبيقات ويب مبنية حسب احتياجك، من الفكرة إلى نسخة تشتغل.</p></button>
+    <button class="row" type="button" data-s="موقع بورتفوليو شخصي"><span class="n">03</span><h3>مواقع بورتفوليو للطلاب والخريجين</h3><span class="go">→</span><p>موقع شخصي يعرض مشاريعك ومهاراتك بشكل يخدم التقديم على الوظائف.</p></button>
+    <button class="row" type="button" data-s="تنفيذ واجهة من تصميم جاهز"><span class="n">04</span><h3>تنفيذ الواجهات من التصاميم</h3><span class="go">→</span><p>عندك تصميم؟ نحوّله إلى صفحات ويب قابلة للاستخدام ومتجاوبة مع الجوال.</p></button>
+    <button class="row" type="button" data-s="تطوير أو تحسين موقع قائم"><span class="n">05</span><h3>تطوير وتحسين المواقع القائمة</h3><span class="go">→</span><p>نضيف ميزات جديدة لموقعك الحالي أو نحسّنه ونصلح مشاكله.</p></button>
+    <button class="row" type="button" data-s="نموذج أولي لفكرة برمجية"><span class="n">06</span><h3>نماذج أولية للأفكار البرمجية</h3><span class="go">→</span><p>تبي تجرّب فكرتك قبل ما تستثمر فيها؟ نبني لك نموذجًا أوليًا تشوفه وتجرّبه.</p></button>
+      <button class="row" type="button" data-s="اختبار البرمجيات (QA)"><span class="n">07</span><h3>اختبار البرمجيات</h3><span class="go">→</span><p>نختبر موقعك أو تطبيقك ونسلّمك تقريرًا واضحًا بالأخطاء وطريقة تكرارها، قبل ما يوصل للمستخدمين.</p></button>
+  </div>
+</div></section>
+
+<section id="approach" class="dark"><div class="wrap">
+  <span class="kick">02 / APPROACH</span>
+  <h2>كيف نفكّر في الشغل</h2>
+  <p class="lead">ثلاث ركائز مترابطة، ولا واحدة تغني عن الثانية.</p>
+  <div class="pillars">
+    <div class="pil"><span class="t">SOFTWARE ENGINEERING</span><h3>أساس هندسي</h3><p>نبدأ بتحليل احتياجك وفهم المشكلة، ثم نبني الحل على أساس هندسي، لا على قالب جاهز.</p></div>
+    <div class="pil"><span class="t">AI-ASSISTED DEVELOPMENT</span><h3>ذكاء اصطناعي كأداة</h3><p>أداة مساعدة في بعض مراحل التطوير، والقرار الهندسي والمراجعة تبقى عند المهندسة.</p></div>
+    <div class="pil"><span class="t">HUMAN JUDGMENT &amp; QUALITY</span><h3>مراجعة واختبار</h3><p>كل ناتج يُراجع ويُفهم ويُختبر قبل اعتماده. المسؤولية على الإنسان، مو على الأداة.</p></div>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <span class="kick">03 / PROCESS</span>
+  <h2>من الفكرة إلى التسليم</h2>
+  <p class="lead">خمس خطوات واضحة، والنطاق والتكلفة يتحددون قبل أي تنفيذ.</p>
+  <div class="log">
+    <div class="step"><span class="tag">STEP 01 · idea</span><h3>تعطينا فكرتك</h3><p>تملأ نموذج الطلب: نوع الخدمة، وصف الفكرة، ميزانيتك التقريبية، والمدة اللي تحتاجها.</p></div>
+    <div class="step"><span class="tag">STEP 02 · scope</span><h3>نحدد النطاق والتكلفة</h3><p>نتفق معك على ما سيُنفَّذ وبكم وخلال كم، قبل ما نبدأ.</p></div>
+    <div class="step"><span class="tag">STEP 03 · build</span><h3>نبني</h3><p>نطوّر الحل خطوة بخطوة، ونستعين بالذكاء الاصطناعي حيث يفيد.</p></div>
+    <div class="step hl"><span class="tag">STEP 04 · test</span><h3><span>نراجع ونختبر</span></h3><p>مهندسة معتمدة في اختبار البرمجيات (ISTQB CTFL) تراجع الكود وتختبر الوظائف والتجاوب على الجوال قبل التسليم.</p></div>
+    <div class="step"><span class="tag">STEP 05 · ship</span><h3>نسلّم</h3><p>تستلم مشروعك جاهزًا، ونوضّح لك ما تحتاج معرفته للتعامل معه.</p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <span class="kick">04 / FAQ</span>
+  <h2>أسئلة شائعة</h2>
+  <div class="qa">
+    <details><summary>كم تكلفة المشروع؟</summary><p>تختلف حسب نوع المشروع وحجمه. اكتب ميزانيتك التقريبية في نموذج الطلب، ونحدد لك التكلفة والنطاق قبل ما نبدأ.</p></details>
+    <details><summary>كم تستغرق مدة التنفيذ؟</summary><p>تعتمد على حجم المشروع. نتفق معك على موعد التسليم قبل البدء.</p></details>
+    <details><summary>وش اللي أجهّزه قبل ما أطلب؟</summary><p>فكرتك، وما تبي تعرضه (نصوص، صور، أمثلة تعجبك). وإذا ما عندك شي جاهز، اكتب فكرتك في النموذج ونبدأ منها.</p></details>
+    <details><summary>هل في تعديل بعد التسليم؟</summary><p>نتفق على التعديلات المشمولة قبل البدء، عشان يكون كل شي واضح من البداية.</p></details>
+    <details><summary>وش يشمل اختبار البرمجيات؟</summary><p>نختبر وظائف الموقع أو التطبيق وسلوكه على الجوال، ونسلّمك تقريرًا بالأخطاء وطريقة تكرارها.</p></details>
+    <details><summary>كيف أطلب؟</summary><p>املأ نموذج الطلب وراجع الرسالة، وبعدها يفتح واتساب برسالة جاهزة ترسلها لنا.</p></details>
+  </div>
+</div></section>
+
+<section id="order" class="order"><div class="wrap">
+  <span class="kick">05 / REQUEST</span>
+  <h2>وش فكرتك؟</h2>
+  <p class="lead">املأ النموذج وراجع الرسالة، وبعدها يفتح واتساب برسالة جاهزة تنرسل لنا.</p>
+
+  <div class="ticket">
+    <div class="tk-h"><span>NEW REQUEST</span><span>LATCODE</span></div>
+    <div class="tk-b">
+      <form id="f" novalidate>
+        <label>الاسم<input name="n" required autocomplete="name" placeholder="اسمك"></label>
+        <label>نوع الخدمة
+          <select name="s" id="svc">
+            <option>موقع تعريفي أو صفحة واحدة</option>
+            <option>تطبيق ويب أو نظام</option>
+            <option>موقع بورتفوليو شخصي</option>
+            <option>تنفيذ واجهة من تصميم جاهز</option>
+            <option>تطوير أو تحسين موقع قائم</option>
+            <option>نموذج أولي لفكرة برمجية</option>
+            <option>اختبار البرمجيات (QA)</option>
+            <option>أخرى</option>
+          </select>
+        </label>
+        <label>وصف الفكرة<textarea name="d" required rows="4" placeholder="اكتب فكرتك أو اللي تحتاجه بالتفصيل اللي تقدر عليه"></textarea></label>
+        <div class="two">
+          <label><span>الميزانية التقريبية <small>(اختياري)</small></span><input name="b" placeholder="مثال: 800 ريال"></label>
+          <label><span>المدة المطلوبة <small>(اختياري)</small></span><input name="t" placeholder="مثال: خلال أسبوعين"></label>
+        </div>
+        <p id="st" role="status"></p>
+      </form>
+      <div class="pv">
+        <h3>معاينة الرسالة قبل الإرسال</h3>
+        <pre id="pv" aria-live="polite"></pre>
+        <div class="acts">
+          <button class="btn" type="submit" form="f" id="send">أرسل عبر واتساب <span aria-hidden="true">←</span></button>
+          <button class="btn ghost" type="button" id="copy">نسخ الرسالة</button>
+        </div>
+        <p class="note">ما يُرسل شيء تلقائيًا. يفتح واتساب والرسالة جاهزة، وتضغط إرسال بنفسك.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="about" class="dark about"><div class="wrap">
+  <span class="kick">06 / FOUNDER</span>
+  <p class="who">وراء LATCODE <mark>مهندسة برمجيات</mark>، تتابع مشروعك من الفكرة حتى الاختبار.</p>
+  <span class="cr">SOFTWARE ENGINEER · ISTQB CTFL</span>
+</div></section>
+</main>
+
+<footer id="foot"><div class="wrap">
+  <div>
+    <a class="logo" href="#top" aria-label="LATCODE">LAT<span>CODE</span></a>
+    <p>للتواصل عبر واتساب: <a class="mono tel" href="https://wa.me/966580778973" target="_blank" rel="noopener">+966 58 077 8973</a></p>
+  </div>
+  <div class="tl">LATCODE — LET'S CODE YOUR IDEAS.</div>
+</div></footer>
+
+<script>
+(function(){
+  var WA='966580778973';
+
+  /* ---- hero: idea -> code (illustrative, not a claimed project) ---- */
+  var pairs=[
+    ['أبغى موقع بورتفوليو يعرض مشاريعي','<section id="portfolio">…</section>'],
+    ['أحتاج نموذج طلب يوصلني على واتساب','form.onsubmit = sendToWhatsApp;'],
+    ['أبي صفحة واحدة لمشروعي الجديد','<main class="one-page">…</main>']
+  ];
+  var ideaEl=document.getElementById('idea'),codeEl=document.getElementById('code');
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){ideaEl.textContent=pairs[0][0];codeEl.textContent=pairs[0][1]}
+  else{
+    var pi=0;
+    (function run(){
+      var p=pairs[pi],a=0,b=0;ideaEl.textContent='';codeEl.textContent='';
+      (function t1(){a++;ideaEl.textContent=p[0].slice(0,a);
+        if(a<p[0].length)setTimeout(t1,38);else setTimeout(t2,350)})();
+      function t2(){b++;codeEl.textContent=p[1].slice(0,b);
+        if(b<p[1].length)setTimeout(t2,26);else setTimeout(function(){pi=(pi+1)%pairs.length;run()},2600)}
+    })();
+  }
+
+  /* ---- order form ---- */
+  var f=document.getElementById('f'),pv=document.getElementById('pv'),st=document.getElementById('st');
+  function msg(){
+    var m='مرحبًا LATCODE، أبغى أطلب مشروع:\nالاسم: '+(f.n.value.trim()||'—')+'\nالخدمة: '+f.s.value+'\nالفكرة: '+(f.d.value.trim()||'—');
+    if(f.b.value.trim())m+='\nالميزانية التقريبية: '+f.b.value.trim();
+    if(f.t.value.trim())m+='\nالمدة المطلوبة: '+f.t.value.trim();
+    return m;
+  }
+  function refresh(){pv.textContent=msg()}
+  f.addEventListener('input',refresh);f.addEventListener('change',refresh);refresh();
+
+  function valid(){
+    if(!f.n.value.trim()){st.textContent='اكتب اسمك أول.';f.n.focus();return false}
+    if(!f.d.value.trim()){st.textContent='اكتب وصف فكرتك أول.';f.d.focus();return false}
+    st.textContent='';return true;
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!valid())return;
+    var url='https://wa.me/'+WA+'?text='+encodeURIComponent(msg());
+    var w=window.open(url,'_blank','noopener');
+    if(!w)location.href=url;
+  });
+  document.getElementById('copy').addEventListener('click',function(){
+    if(!valid())return;
+    var txt=msg(),btn=this;
+    function ok(){st.textContent='تم نسخ الرسالة.';setTimeout(function(){if(st.textContent==='تم نسخ الرسالة.')st.textContent=''},2500)}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(ok,function(){st.textContent='تعذر النسخ، حدّد الرسالة وانسخها يدويًا.'})}
+    else{st.textContent='تعذر النسخ، حدّد الرسالة وانسخها يدويًا.'}
+  });
+
+  /* ---- service rows preselect the form ---- */
+  document.getElementById('rows').addEventListener('click',function(e){
+    var r=e.target.closest('.row');if(!r)return;
+    f.s.value=r.dataset.s;refresh();
+    document.getElementById('order').scrollIntoView({behavior:reduce?'auto':'smooth'});
+    setTimeout(function(){(f.n.value?f.d:f.n).focus({preventScroll:true})},reduce?0:700);
+  });
+
+  /* ---- floating whatsapp button (hidden while the form is on screen) ---- */
+  var w=document.createElement('a');
+  w.className='btn sm wa';w.target='_blank';w.rel='noopener';w.textContent='واتساب';
+  w.href='https://wa.me/'+WA+'?text='+encodeURIComponent('مرحبًا LATCODE، عندي استفسار عن مشروع.');
+  document.body.appendChild(w);
+  if('IntersectionObserver' in window){
+    var seen={};var io=new IntersectionObserver(function(es){es.forEach(function(e){seen[e.target.id]=e.isIntersecting});var h=seen.order||seen.foot;w.style.opacity=h?0:1;w.style.pointerEvents=h?'none':'auto'},{threshold:.15});io.observe(document.getElementById('order'));io.observe(document.getElementById('foot'));
+  }
+})();
+</script>
+</body>
+</html>
