@@ -121,6 +121,9 @@ h2{font-size:clamp(30px,6vw,52px)}
 .qa details[open] summary::after{content:"−"}
 .qa summary:hover{background:var(--paper2)}
 .qa p{color:var(--muted);font-size:16px;max-width:60ch;padding:0 4px 20px}
+/* tiktok band */
+.tt{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;border:2px dashed var(--ink);border-radius:6px;padding:20px 22px}
+.tt p{font:600 clamp(18px,3vw,22px)/1.5 var(--disp)}
 /* order ticket */
 .order{background:var(--paper2)}
 .ticket{margin-top:36px;background:var(--paper);border:2px solid var(--ink);border-radius:6px;box-shadow:8px 8px 0 var(--ink);overflow:hidden}
@@ -230,6 +233,7 @@ footer .tl{font:600 13px/1.7 var(--mono);direction:ltr;text-align:left;color:var
     <button class="row" type="button" data-s="نموذج أولي لفكرة برمجية"><span class="n">06</span><h3>نماذج أولية للأفكار البرمجية</h3><span class="go">→</span><p>تبي تجرّب فكرتك قبل ما تستثمر فيها؟ نبني لك نموذجًا أوليًا تشوفه وتجرّبه.</p></button>
       <button class="row" type="button" data-s="اختبار البرمجيات (QA)"><span class="n">07</span><h3>اختبار البرمجيات</h3><span class="go">→</span><p>نختبر موقعك أو تطبيقك ونسلّمك تقريرًا واضحًا بالأخطاء وطريقة تكرارها، قبل ما يوصل للمستخدمين.</p></button>
   </div>
+  <div class="tt"><p>شغلنا ننزّله على تيك توك</p><a class="btn ghost" data-tt href="https://www.tiktok.com/@latcode6" target="_blank" rel="noopener">شوف شغلنا على تيك توك <span aria-hidden="true">↗</span></a></div>
 </div></section>
 
 <section id="approach" class="dark"><div class="wrap">
@@ -322,6 +326,7 @@ footer .tl{font:600 13px/1.7 var(--mono);direction:ltr;text-align:left;color:var
   <div>
     <a class="logo" href="#top" aria-label="LATCODE">LAT<span>CODE</span></a>
     <p>للتواصل عبر واتساب: <a class="mono tel" href="https://wa.me/966580778973" target="_blank" rel="noopener">+966 58 077 8973</a></p>
+    <p>تيك توك: <a class="mono tel" data-tt data-handle href="https://www.tiktok.com/@latcode6" target="_blank" rel="noopener">@latcode6</a></p>
   </div>
   <div class="tl">LATCODE — LET'S CODE YOUR IDEAS.</div>
 </div></footer>
@@ -329,6 +334,8 @@ footer .tl{font:600 13px/1.7 var(--mono);direction:ltr;text-align:left;color:var
 <script>
 (function(){
   var WA='966580778973';
+  var TT='https://www.tiktok.com/@latcode6';   /* رابط حساب تيك توك: غيّريه هنا فقط إذا تغيّر اسم المستخدم */
+  [].forEach.call(document.querySelectorAll('[data-tt]'),function(a){a.href=TT;if(a.hasAttribute('data-handle'))a.textContent='@'+TT.split('@')[1].replace(/[/?#].*/,'')});
 
   /* ---- hero: idea -> code (illustrative, not a claimed project) ---- */
   var pairs=[
